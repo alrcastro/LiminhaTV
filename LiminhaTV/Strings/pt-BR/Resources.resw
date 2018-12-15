@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAdd.Content" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="cant_add_epg" xml:space="preserve">
+    <value>Erro ao carregar arquivo EPG confira a URL e tente de novo</value>
+  </data>
+  <data name="cant_add_list" xml:space="preserve">
+    <value>Não foi possivel adicionar a lista, verifique se a lista esta em um formato M3U.</value>
+  </data>
+  <data name="chkReplace.Content" xml:space="preserve">
+    <value>Substituir canais</value>
+  </data>
+  <data name="cmdEpg.Label" xml:space="preserve">
+    <value>Enviar EPG</value>
+  </data>
+  <data name="cmdHelp.Label" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="cmdRefresh.Label" xml:space="preserve">
+    <value>Atualizar Canais</value>
+  </data>
+  <data name="cmdShortcut.Label" xml:space="preserve">
+    <value>Atalhos</value>
+  </data>
+  <data name="cmdShowEpg.Label" xml:space="preserve">
+    <value>Mostrar Programação dos Canais</value>
+  </data>
+  <data name="cmdUpload.Label" xml:space="preserve">
+    <value>Upload da lista de canais</value>
+  </data>
+  <data name="fav_added" xml:space="preserve">
+    <value>{0} adicionado ao favoritos.</value>
+  </data>
+  <data name="fav_removed" xml:space="preserve">
+    <value>{0} removido do favoritos.</value>
+  </data>
+  <data name="firstInfo.Text" xml:space="preserve">
+    <value>* Primeiro você precisa de uma lista de canais. (Por padrão ja existe uma lista que pode estar desatualizada/offline). Essa lista deve ser do tipo M3U, você pode facilmente achar uma na internet procurando por 'Lista de canais IPTV'</value>
+  </data>
+  <data name="helpFirst.Text" xml:space="preserve">
+    <value>Para assitir a TV você precisa de uma lista de canais de formato EPG, as listas podem ser encontradas na internet.
+Depois aperte em "Adicionar" e adicione o link dessa lista. Depois disso os canais ja devem ser caregados na aplicação.</value>
+  </data>
+  <data name="helpSecond.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="notification.Text" xml:space="preserve">
+    <value>Adicionado ao coisa</value>
+  </data>
+  <data name="secondInfo.Text" xml:space="preserve">
+    <value>* Depois basta apertar no botão 'Upload' na parte de baixo da tela principal e por o endereço da sua lista.</value>
+  </data>
+  <data name="thirdInfo.Text" xml:space="preserve">
+    <value>* Se você quiser você ainda pode enviar uma lista EPG com as programações dos canais (funcionalidade em BETA).</value>
+  </data>
+  <data name="txtInfo.Text" xml:space="preserve">
+    <value>Não há nenhuma lista gravada, insira uma lista de canais para começar a usar o sistema, aperte o botão X no controle do XBOX One para exibir o tutorial</value>
+  </data>
+  <data name="txtPesquisa.PlaceholderText" xml:space="preserve">
+    <value>Pesquisa</value>
+  </data>
+  <data name="txtUrl.PlaceholderText" xml:space="preserve">
+    <value>URL da lista M3U</value>
+  </data>
+  <data name="txtUrlEPG.PlaceholderText" xml:space="preserve">
+    <value>URL do arquivo EPG</value>
+  </data>
+  <data name="updated" xml:space="preserve">
+    <value>Canais/EPG Atualizados!</value>
+  </data>
+  <data name="welcome.Text" xml:space="preserve">
+    <value>Bem vindo ao Liminha TV!</value>
+  </data>
+  <data name="welcomeInfo.Text" xml:space="preserve">
+    <value>Esse aplicativo serve para assistir IPTV!  Siga os proximos passos para usar o aplicativo:</value>
+  </data>
+</root>

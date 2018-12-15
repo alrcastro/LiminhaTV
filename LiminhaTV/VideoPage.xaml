@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="LiminhaTV.VideoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiminhaTV"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tm="using:LiminhaTV.Controls"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Flyout x:Key="epgGridFlyout" x:Name="epgGridFlyout" Placement="Top">
+
+            <Flyout.FlyoutPresenterStyle>
+                <Style TargetType="FlyoutPresenter">
+                    <Setter Property="MinHeight" Value="100"/>
+                    <Setter Property="MinWidth" Value="900"/>
+                    <Setter Property="Margin" Value="0,0,300,0"/>
+                </Style>
+            </Flyout.FlyoutPresenterStyle>
+        </Flyout>
+
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="splitMenu" DisplayMode="Overlay">
+            <SplitView.Pane>
+                <Grid Background="Gray">
+                    <ListView x:Name="lstChannel" ItemClick="lstChannel_ItemClick" SelectionMode="Single" IsItemClickEnabled="True" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10" Orientation="Vertical">
+                                    <TextBlock Text="{Binding Title}" />
+                                    <!--<Image Width="200" Height="180" >
+                                <Image.Source>
+                                    <BitmapImage UriSource="{Binding LogoURL}" CreateOptions="None" />
+                                </Image.Source>
+                            </Image> -->
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="200"/>
+                    </Grid.RowDefinitions>
+                    <Popup Grid.Row="2" HorizontalOffset="50"  x:Name="epgPopup">
+                        <Grid Height="300" MaxWidth="1600" ScrollViewer.HorizontalScrollBarVisibility="Visible" Background="White">
+                            <tm:Timeline x:Name="epgTime" HorizontalAlignment="Stretch"></tm:Timeline>
+                        </Grid>
+                    </Popup>
+                    <MediaElement Grid.RowSpan="2" x:Name="mediavlc" AreTransportControlsEnabled="True" />
+                </Grid>
+
+            </SplitView.Content>
+        </SplitView>
+
+    </Grid>
+</Page>

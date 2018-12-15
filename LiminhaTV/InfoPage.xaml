@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="LiminhaTV.InfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LiminhaTV"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True" IsSticky="True">
+            <AppBarToggleButton x:Uid="cmdShortcut" Icon="Forward" Label="Atalhos" x:Name="appHelp" Click="Shortcuts_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel >            
+            <TextBlock FontSize="30" TextAlignment="Center" Padding="20" x:Uid="welcome" Text="Bem vindo ao Liminha TV!" />
+            <TextBlock FontSize="30" TextAlignment="Left" Padding="10" x:Uid="welcomeInfo" Text="Esse aplicativo serve para assistir IPTV!  Siga os proximos passos para usar o aplicativo: " />            
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock TextWrapping="Wrap" FontSize="30" Padding="20" x:Uid="firstInfo" Text="* Primeiro você precisa de uma lista de canais. (Por padrão ja existe uma lista que pode estar desatualizada/offline). Essa lista deve ser do tipo M3U, você pode facilmente achar uma na internet procurando por 'Lista de canais IPTV'." />
+            <TextBlock TextWrapping="Wrap" FontSize="30" Padding="20" x:Uid="secondInfo" Text="* Depois basta apertar no botão 'Upload' na parte de baixo da tela principal e por o endereço da sua lista." />
+            <TextBlock TextWrapping="Wrap" FontSize="30" Padding="20" x:Uid="thirdInfo" Text="* Se você quiser você ainda pode enviar uma lista EPG com as programações dos canais (funcionalidade em BETA)." />            
+        </StackPanel>
+    </Grid>
+</Page>
